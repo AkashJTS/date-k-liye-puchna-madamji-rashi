@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YAY! It's a Date! ❤️</title>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #ffe6f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 25px 20px;
+            border-radius: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+            max-width: 420px;
+            width: 100%;
+            animation: bounceIn 0.8s ease;
+        }
+
+        @keyframes bounceIn {
+            0% { transform: scale(0.3); opacity: 0; }
+            50% { transform: scale(1.05); }
+            70% { transform: scale(0.9); }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        h1 {
+            font-family: 'Caveat', cursive;
+            font-size: 32px;
+            color: #d63384;
+            margin-bottom: 10px;
+            line-height: 1.2;
+        }
+
+        .date-img-box {
+            width: 100%;
+            height: 220px;
+            margin: 10px 0;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        }
+
+        .date-img-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .message {
+            font-family: 'Caveat', cursive;
+            font-size: 21px;
+            color: #4a154b;
+            line-height: 1.4;
+            margin: 12px 0;
+        }
+
+        .stickman-box {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 5px;
+        }
+
+        .stickman-box img {
+            width: 90px;
+            height: auto;
+            animation: float 2s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+        }
+
+        .smile-text {
+            font-size: 23px;
+            color: #ff4757;
+            font-weight: bold;
+            margin-top: 10px;
+            font-family: 'Caveat', cursive;
+        }
+
+        .toast {
+            position: fixed;
+            top: 20px;
+            background: rgba(120, 26, 12, 0.95);
+            color: #fff;
+            padding: 12px 20px;
+            border-radius: 25px;
+            font-size: 15px;
+            font-weight: 600;
+            z-index: 2000;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            animation: fadeIn 0.3s ease;
+            text-align: center;
+            max-width: 85%;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="toast" class="toast">
+        Chalo tumhare insaan ke paas le chalta hu... 💖
+    </div>
+
+    <div class="container">
+        <h1>YAAAY! It's a Date! Thursday! 🥳🌹</h1>
+        
+        <div class="date-img-box">
+            <img src="assets/date-sunset.png" alt="Romantic Sunset Date">
+        </div>
+
+        <div class="message">
+            Be ready, main lene aunga tumhe! 🚗✨<br>
+            Location? Ahhhh woh ek surprise hai, I am sure tumhe bohot pasand aayegi! 😉🎁
+        </div>
+
+       
+
+        <div class="smile-text">
+            Ab bas ek choti si cute smile kar do! 😊💖
+        </div>
+    </div>
+
+    <script>
+        // Direct automatic redirect to WhatsApp
+        setTimeout(() => {
+            const textMsg = encodeURIComponent("Haa ji YES hai! Milte hain Thursday ko, late mat karna! 💖");
+            window.location.href = `https://wa.me/919612152820?text=${textMsg}`;
+        }, 2200);
+    </script>
+</body>
+</html>
